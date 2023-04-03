@@ -9,6 +9,25 @@
 </head>
 <body>
     
+
+  <div class="calculator">
+      <input type="text" [(ngModel)]="num1" id="num1"  /><br>
+      <input type="text" [(ngModel)]="num2" id="num2"  /><br>
+      <input type="text" [(ngModel)]="result" id="result" readonly /> 
+  </div>
+  
+  <div class="buttons">
+  
+      <button (click)="somar()">Somar</button>
+      <button (click)="subtrair()">Subtrair</button>
+      <button (click)="multiplicar()">Multiplicar</button>
+      <button (click)="dividir()">Dividir</button>
+      <button (click)="restodiv()">Resto da Divisão</button><br>
+  
+  </div>
+    
+
+
     <app-root>
       <app-calculadora></app-calculadora>
     </app-root>
