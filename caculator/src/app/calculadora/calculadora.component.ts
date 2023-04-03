@@ -14,17 +14,21 @@ export class CalculadoraComponent {
   mult: number = 0;
   divisao: number = 0;
   RestoDiv: number = 0;
+  result: any;
 
    somar(){
       this.soma = this.num1 + this.num2;
+      this.result = this.soma;
    }
 
   subtrair(){
     this.Subtrair = this.num1 - this.num2;
+    this.result = this.Subtrair;
   }
 
   multiplicar(){
     this.mult = this.num1 * this.num2;
+    this.result = this.mult;
   }
 
   dividir(){

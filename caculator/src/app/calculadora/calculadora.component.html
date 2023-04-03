@@ -1,19 +1,18 @@
-<p>calculadora works!</p>
+<p>calculadora</p>
 
 <div class="calculator">
-    <input type="text" id="val1" enable /> 
-    <input type="text" id="val2" enable /> 
-    <input type="text" id="result" disabled /> 
+    <input type="text" [(ngModel)]="num1" id="num1"  /><br>
+    <input type="text" [(ngModel)]="num2" id="num2"  /><br>
+    <input type="text" [(ngModel)]="result" id="result" readonly /> 
 </div>
 
 <div class="buttons">
 
-    <button class="operation" value="/">/</button>
-    <button class="operation" value="+">+</button>
-    <button class="operation" value="-">-</button>
-    <button class="operation" value="*">*</button><br>
-    
-    <button id="clear">C</button>
-    <button id="equal">=</button>
+    <button (click)="somar()">Somar</button>
+    <button (click)="subtrair()">Subtrair</button>
+    <button (click)="multiplicar()">Multiplicar</button>
+    <button (click)="dividir()">Dividir</button>
+    <button (click)="restodiv()">Resto da Divisão</button><br>
+
   </div>
   
